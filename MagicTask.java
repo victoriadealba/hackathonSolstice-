@@ -1,6 +1,11 @@
 import java.util.Scanner;
-public class MagicTask {
 
+public class MagicTask {
+    
+    public static void Break(){
+        System.out.println("Break Time! Choose what you would like to see.");
+        System.out.println("1. Motivational Quote\n2. Dog pic;)\n3. Video of the day");
+    }
 
     public static void main(String[] args) {
         
@@ -16,6 +21,7 @@ public class MagicTask {
         }
         else 
             System.out.println ("Not too bad... You got this!");
+        
     
         // need to create a main menu! (this should come first)
         
