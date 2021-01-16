@@ -10,6 +10,13 @@ public class MagicTask {
         
         int numTask = scanner.nextInt();
         
+        System.out.println ("You've entered " + numTask);
+        if (numTask > 5) {
+            System.out.println("You've got a lot to do today... Better get to work!");
+        }
+        else 
+            System.out.println ("Not too bad... You got this!");
+    
         // need to create a main menu! (this should come first)
         
         //figure out how to put image in java file...
