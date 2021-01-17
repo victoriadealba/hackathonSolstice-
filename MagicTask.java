@@ -5,7 +5,6 @@ public class MagicTask {
     public static void breakTime(int nummm) {
         Scanner scnr = new Scanner(System.in);
         System.out.println("Break Time! Choose what you would like to see.");
-
         System.out.println("1. Motivational Quote\n2. Comp Sci Joke");
 
         int option = scnr.nextInt();
@@ -15,33 +14,24 @@ public class MagicTask {
                 System.out.println("It's not whether you get knocked down, it's whether you get up");
             } else if (nummm == 2) {
                 System.out.println("Winners are not people who never fail but people who never quit.");
-
             } else if (nummm == 3) {
                 System.out.println("It's on YOU to get YOU where YOU wanna be.");
-
             }
-
         }
 
         if (option == 2) {
             if (nummm == 1) {
-                System.out.println("What do you call a creepy computer science teacher? A PDF file.");
-
+                System.out.println("I don’t like computer science jokes....Not one bit.");
             }
             if (nummm == 2) {
-                System.out.println("I don’t like computer science jokes....Not one bit.");
-
+                System.out.println("What do you call a creepy computer science teacher? A PDF file.");
             }
         }
-
-
         System.out.println("Have a nice break!");
-
-
     }
 
     public static void Menu(){
-
+        System.out.println("");
         System.out.println("Main Menu");
         System.out.println("---------");
         System.out.println("1. Generate a task");
@@ -67,11 +57,7 @@ public class MagicTask {
                 tasks[n] = "completed";
                 run = false;
             }
-
-        }
-
-        }
-
+        }  }
 
     public static String[] EnterNewTask(int numTask, String[] tasks){
         Scanner scnr = new Scanner(System.in);
@@ -89,11 +75,9 @@ public class MagicTask {
 
         return hold;
 
-
     }
 
     public static void main(String[] args) {
-
 
         Scanner scanner = new Scanner(System.in);
 
@@ -106,7 +90,7 @@ public class MagicTask {
 
         System.out.println("Please type in your tasks.");
 
-        for (int i = 0; i < numTask ; i++){
+        for (int i = 0; i < numTask ; i++) {
             int hold = i + 1;
             System.out.println(hold + ".");
             String temp = scanner.next();
@@ -131,7 +115,6 @@ public class MagicTask {
                     if(count % 3 == 0) {
                         nummm++;
                         if (nummm ==4){
-
                             nummm = 0;
                         }
                         breakTime(nummm); }
@@ -157,9 +140,6 @@ public class MagicTask {
 
             }
         }
-
-
-
 
     }
 }
